@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
 
-public class LoginPage_Thu {
+public class LoginPage_Thu{
 
     private WebDriver driver;
     private WebDriverWait wait;

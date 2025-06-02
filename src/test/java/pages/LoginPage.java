@@ -18,6 +18,12 @@ public class LoginPage {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
+    public void loginAdmin(){
+        driver.findElement(By.xpath("//input[@id='emailOrUsername']")).sendKeys("testadmin");
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("test1234");
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+    }
+
     public void TC004verifyErrorMessageIsDisplay(){
         WebElement errorMsg = driver.findElement(By.xpath("//p[text()='The given id must not be null']"));
         Assert.assertEquals("The given id must not be null", errorMsg.getText());

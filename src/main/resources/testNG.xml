@@ -4,13 +4,47 @@
     </listeners>
 
     <test name="Regression Test">
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="scripts.QLLop">
-                <methods>
-                    <include name ="verifyQLLop"/>
-                </methods>
+            <!--Xuan Hue-->
+            <!--<class name="scripts.QLLop"/>-->
+            <class name="scripts.Attendancemanagement">
+             <methods>
+                <include name ="KiemTraNutDanhSachHocVienBoiBai"/>
+                <include name ="kiemTraChuyenTrangSauKhiNhanVaoDSBoiBai"/>
+                <include name ="kiemTraDanhDauDaBoiBai"/>
+                <include name ="kiemTraDanhDauNghiTinhPhi"/>
+                <include name ="kiemTraDanhDauNghiBaoLuu"/>
+                <include name ="kiemTraClickHoiBuoiDiemDanh"/>
+                <include name ="KiemTraChucNangBTNDiemDanh"/>
+                <include name ="KiemTraDanhSachKhiDiemDanhVang"/>
+
+                <!--<include name ="TC005verifyTKLSDiemDanhHV"/>
+                <include name ="TC006verifyTKLSDiemDanhHV1trong3TTKoHL"/>
+                <include name ="TC007verifyinputTKtheoGV"/>
+                <include name ="TC009verifyHienThiSumHVvaCacTrangThai"/>-->
+
+            </methods>
             </class>
+            <!--An Thu-->
+           <!-- <class name="scripts.QLLop"/>
+            <class name="scripts.QLDiemDanh"/>-->
+
+            <!--Hoang Long-->
+            <!--<class name="scripts.QLLop"/>
+            <class name="scripts.QLDiemDanh"/>-->
+
+            <!--Chi Trang-->
+            <!--<class name="scripts.QLLop"/>
+            <class name="scripts.QLDiemDanh"/>-->
+
+
+
+
+               <!-- <methods>
+                    <include name ="verifyQLLop"/>
+                </methods>-->
+            <!--</class>-->
         </classes>
     </test>
 </suite>
